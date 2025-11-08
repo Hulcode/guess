@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="stylesheet" href="csss/all.min.css" />
+
+    <link rel="stylesheet" href="csss/master.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <title>
+      [Arabic] HTML, CSS, JavaScript Tutorials - Guess The Word Game
+    </title>
+  </head>
+  <body>
+    <div class="control-buttons">
+      <span>Start Game</span>
+    </div>
+
+    <h1></h1>
+    <div class="guess-game">
+      <div class="game-area">
+        <div class="inputs"></div>
+        <div class="control">
+          <button class="check">Check Word</button>
+          <button class="hint"><span></span> Hint</button>
+        </div>
+        <div class="message"></div>
+      </div>
+
+      <div class="key-colors">
+        <h2>Key Colors</h2>
+        <div class="key-color">
+          <div class="key in-place"></div>
+          <div class="key-text">Letter Is Correct And In Place</div>
+        </div>
+        <div class="key-color">
+          <div class="key not-in-place"></div>
+          <div class="key-text">Letter Is Correct But Not In Place</div>
+        </div>
+        <div class="key-color">
+          <div class="key no"></div>
+          <div class="key-text">Letter Is Wrong</div>
+        </div>
+
+        <div class="leader-board">
+          <h2>Leader Board</h2>
+          <table>
+            <thead>
+              <tr>
+                <th>Name</th>
+                <th>Tries</th>
+              </tr>
+            </thead>
+            <tbody id="leaderBody">
+         
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <footer></footer>
+    <script src="main.js"></script>
+  </body>
+</html>
